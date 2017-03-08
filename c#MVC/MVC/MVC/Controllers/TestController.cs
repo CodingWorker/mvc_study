@@ -17,7 +17,7 @@ namespace MVC.Controllers
 
         public ActionResult Test()
         {
-            View("Index");
+            new HomeController().Index();   //这个方法会调用view("index")渲染index
             return View("MyView");
         }
     }
